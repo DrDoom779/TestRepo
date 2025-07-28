@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+
+    <style>
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #ff66c4;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+
+        h2 {
+            border-bottom: 2px solid #ff66c4;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            color: #ff85d0;
+        }
+
+
+        form {
+            max-width: 700px;
+            margin: auto;
+            background: #111;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 25px #ff66c480;
+        }
+
+
+        p {margin: 1rem 0;}
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            background: #222;
+            color: #ffccf9;
+            margin-top: 0.25rem;
+            box-shadow: inset 0 0 5px #ff66c4;
+        }
+
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #ff66c4;
+            margin-right: 0.5rem;
+            transform: scale(1.1);
+        }
+
+
+        textarea {
+            resize: vertical;
+        }
+
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 0.75rem 2rem;
+            background: #ff66c4;
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background: #ff85d0;
+            transform: scale(1.05);
+        }
+
+
+        span {
+            color: #ff2cb3;
+            font-weight: bold;
+        }
+
+
+        ::placeholder {
+            color: #ffaad4;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+<p><span>*</span> Denotes Required Information</p>
+
+<h2>Donor Info
+
+</h2>
+
+<form>
+
+    <p>First Name* <input type="text" placeholder="e.g. Jennie">
+    </p>
+    <p>Last Name* <input type="text">
+    </p>
+    <p>Company <input type="text"></p>
+    <p>Address 1* <input type="text"></p>
+    <p>Address 2 <input type="text">
+    </p>
+    <p>City* <input type="text">
+    </p>
+    <p>State* 
+        <select>
+            <option>Select a State</option>
+        </select>
+    </p>
+    <p>Zip Code* <input type="text"></p>
+    <p>Country* 
+        <select>
+            <option>Select a Country</option>
+        </select>
+    </p>
+    <p>Phone <input type="text">
+    </p>
+    <p>Fax <input type="text">
+    </p>
+    <p>Email* <input type="email">
+    </p>
+    <p>Donation Amount* 
+        <input type="radio" name="donation"> None
+        <input type="radio" name="donation"> $50
+        <input type="radio" name="donation"> $75
+        <input type="radio" name="donation"> $100
+        <input type="radio" name="donation"> $250
+        <input type="radio" name="donation"> Other
+    </p>
+    <p>Other Amount <input type="text"></p>
+    <p><input type="checkbox"> I am interested in giving on a regular basis.</p>
+    <p>Monthly Credit Card $ <input type="text"> For <input type="text" size="3"> Months</p>
+
+    <h2>Honorarium and Memorial Donation Information
+
+    </h2>
+    <p>I would like to make this donation 
+        <input type="radio" name="honor"> To Honor
+        <input type="radio" name="honor"> In Memory of
+    </p>
+    <p>Name <input type="text"></p>
+    <p>Acknowledge Donation to <input type="text"></p>
+    <p>Address <input type="text"></p>
+    <p>City <input type="text"></p>
+    <p>State 
+        <select>
+            <option>Select a State</option>
+        </select>
+    </p>
+    <p>Zip <input type="text"></p>
+
+    <h2>Additional Information
+
+    </h2>
+
+    <p><input type="checkbox"> I would like my gift to remain anonymous.</p>
+    <p><input type="checkbox"> My employer offers a matching gift program.</p>
+    <p><input type="checkbox"> Skip thank you letter.</p>
+    <p>Comments:<br>
+    <textarea rows="5" cols="50" placeholder="Drop your thoughts here"></textarea></p>
+    <p>How may we contact you<br>
+        <input type="checkbox"> E-mail
+
+        <input type="checkbox"> Postal Mail
+
+        <input type="checkbox"> Telephone
+
+        <input type="checkbox"> Fax
+    </p>
+    <p><input type="checkbox"> I would like to receive newsletters</p>
+    <p><input type="checkbox"> I would like info about volunteering</p>
+    <p>
+        <input type="reset" value="Reset">
+
+        <input type="submit" value="Continue">
+    </p>
+
+
+
+</form>
+
+</body>
+</html>
